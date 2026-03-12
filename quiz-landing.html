@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quiz Categories</title>
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0;
+}
+
+.container{
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1{
+    margin-bottom:30px;
+}
+
+button{
+    width:220px;
+    padding:15px;
+    margin:10px;
+    font-size:18px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#4facfe;
+    color:white;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0077ff;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Select Your Category</h1>
+
+<button onclick="openForm('FORM_LINK_1')">Kids Category</button>
+<br>
+
+<button onclick="openForm('FORM_LINK_2')">Junior Category</button>
+<br>
+
+<button onclick="openForm('FORM_LINK_3')">Senior Category</button>
+
+</div>
+
+<script>
+function openForm(link){
+    window.location.href = link;
+}
+</script>
+
+</body>
+</html>
